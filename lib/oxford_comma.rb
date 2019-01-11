@@ -9,8 +9,9 @@ def oxford_comma(array)
     full = "#{part1}, and #{part2}"
   else array.size > 3
     part2 = array[-1]
-    array.pop
-    part_1 = part1_prep.join(", ")
+    part_1_prep = array.pop
+    array
+    part_1 = array.join(", ")
     full = "#{part1} and #{part2}"
   end
 
