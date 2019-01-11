@@ -8,8 +8,9 @@ def oxford_comma(array)
     part2 = array.slice(2)
     full = "#{part1} and #{part2}"
   else array.size > 3
-    part1 =
     part2 = array[-1]
+    part1_and_a_half = array.pop
+
     full = "#{part1} and #{part2}"
   end
 
