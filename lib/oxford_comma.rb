@@ -10,7 +10,7 @@ def oxford_comma(array)
   else array.size > 3
     part2 = array.pop
     part1 = array.join(", ")
-    full = "#{part1} and #{part2}"
+    full = "#{part1}, and #{part2}"
   end
 
 end
